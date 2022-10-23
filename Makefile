@@ -1,3 +1,5 @@
+README   = README.md
+
 .PHONY: test
 test: luacheck vusted
 
@@ -8,3 +10,7 @@ luacheck:
 .PHONY: vusted
 vusted:
 	vusted ./lua
+
+.PHONY: init
+init:
+	./script/init.sh
