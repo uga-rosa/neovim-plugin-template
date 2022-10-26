@@ -4,7 +4,7 @@ set -eu
 ROOT_PATH=$(cd $(dirname $0)/..; pwd)
 
 # Empty README.md
-: > $ROOT_DIR/README.md
+: > $ROOT_PATH/README.md
 
 # Initialize ./lua
 ROOT_DIR=${ROOT_PATH##*/}
@@ -12,5 +12,5 @@ ROOT_DIR=${ROOT_PATH##*/}
 PLUGIN_NAME=${ROOT_DIR%.nvim}
 # Substitute from '-' to '_'
 PLUGIN_NAME=${PLUGIN_NAME//-/_}
-mkdir -p $ROOT_DIR/lua/$PLUGIN_NAME
-touch $ROOT_DIR/lua/$PLUGIN_NAME/init.lua
+mkdir -p $ROOT_PATH/lua/$PLUGIN_NAME
+touch $ROOT_PATH/lua/$PLUGIN_NAME/init.lua
