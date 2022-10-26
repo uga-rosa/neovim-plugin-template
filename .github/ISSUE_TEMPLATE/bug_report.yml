@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report a problem in ccc.nvim
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: "Description"
+      description: "Describe in detail what happens"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Environments"
+      description: "information such as OS and neovim version"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Minimal reproducible full config"
+      description: |
+        **If there are deficiencies here, the issue will not be respond. Please understand that this is the most important section.**
+        You must provide a working config based on [this](../../script/minimal.vim). Not part of config.
+        Users of packer.nvim should check to see if there any plugins left in `~/.local/share/nvim/site/pack/packer`.
+        1. Copy the base minimal config to the `~/minimal.vim`.
+        2. Edit `~/minimal.vim` for reproducing the issue.
+        3. Open `nvim -u ~/minimal.vim`.
+        4. Check steps to reproduce.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce"
+      description: "Full reproduction steps. Include a sample file if your issue relates to a specific filetype."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "A description of the behavior you expected."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Actual behavior"
+      description: "A description of the actual behavior."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Additional context"
+      description: "Any other relevant information"
